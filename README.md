@@ -1,0 +1,1 @@
+# nette-dto-serializer
