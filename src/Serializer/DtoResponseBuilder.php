@@ -34,7 +34,7 @@ final class DtoResponseBuilder
                 if (!$item instanceof Item){
                     continue;
                 }
-                $processed[] = $this->process($dto, $requestedIncludes);
+                $processed[] = $this->process($item, $requestedIncludes);
             }
             return $processed;
         }

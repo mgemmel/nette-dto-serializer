@@ -23,5 +23,10 @@
     }
   },
   "minimum-stability": "stable",
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": false
+    }
+  }
 }
