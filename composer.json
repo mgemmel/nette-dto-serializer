@@ -3,11 +3,7 @@
   "description": "DTO-based API serializer with support for includes, nesting and Nette integration.",
   "type": "library",
   "require": {
-    "php": ">=8.3",
-    "symfony/serializer": "^7.1",
-    "symfony/property-access": "^7.1",
-    "symfony/property-info": "^7.1",
-    "nette/di": "^3.2"
+    "php": ">=8.3"
   },
 
   "require-dev": {
