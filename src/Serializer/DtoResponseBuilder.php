@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace NetteDtoSerializer\Serializer;
 
 use Closure;
+use NetteDtoSerializer\Utils\IncludeParser;
 
 final class DtoResponseBuilder
 {
@@ -17,8 +18,9 @@ final class DtoResponseBuilder
         if ($dto instanceof Collection) {
             $dto = $dto->all();
         }
+        $includeParser = new IncludeParser();
 
-        return $this->process($dto, $requestedIncludes);
+        return $this->process($dto, $includeParser->parseIncludes($requestedIncludes));
     }
 
     /**
